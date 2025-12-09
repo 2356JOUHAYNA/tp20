@@ -1,0 +1,18 @@
+package com.example.client_service;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+
+@SpringBootApplication
+@EnableDiscoveryClient // Active l'enregistrement auprès d'Eureka
+public class ClientServiceApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(ClientServiceApplication.class, args);
+	}
+}
